@@ -23,6 +23,19 @@ body {
     padding: 20px;
 }
 
+h1 {
+    font-size: 5rem;
+}
+
+.introdução {
+    text-align: center;
+    margin: 1.5rem 0 5rem 0;
+    font-size: 1.5rem;
+    border: solid 2.5px black;
+    border-radius: 15px;
+    width: 75rem;
+}
+
 section {
     display: flex;
     align-items: center;
