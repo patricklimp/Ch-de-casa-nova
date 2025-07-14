@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dancing-script-uniquifier {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Dancing Script", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: solid 2.5px black;
+    border-radius: 15px;
+    width: 25rem;
+    min-height: 9rem;
+    padding: 8px;
+    gap: 4px;
+    overflow: hidden;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: white; /* Fundo branco para destacar o efeito 3D */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para elevação 3D */
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg); /* Inclinação 3D inicial */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.item:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(-10px); /* Levanta e alinha no hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Sombra maior no hover */
+}
+
+.itens-lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 5px;
+}
+
+.item-presente-unico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: solid 2.5px black;
+    border-radius: 15px;
+    width: 25rem;
+    min-height: 9rem;
+    padding: 8px;
+    gap: 4px;
+    overflow: hidden;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-size: 1.75rem;
+    font-weight: bold;
+    background-color: white; /* Fundo branco para destacar o efeito 3D */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para elevação 3D */
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg); /* Inclinação 3D inicial */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.item-presente-unico:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(-10px); /* Levanta e alinha no hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Sombra maior no hover */
+}
+
+.caixa {
+    border: solid 2px black;
+    border-radius: 9px;
+    width: 100%;
+    max-width: 90%;
+    padding: 2px;
+}
+
+button {
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 2px 7px;
+    width: 100%;
+    max-width: 90%;
+}
+
+@media (max-width: 600px) {
+    .item, .item-presente-unico {
+        width: 100%;
+        max-width: 15rem;
+        font-size: 0.85rem;
+        transform: perspective(1000px) rotateX(3deg) rotateY(3deg); /* Efeito 3D reduzido em telas menores */
+    }
+
+    .item:hover, .item-presente-unico:hover {
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(-5px); /* Menos elevação em telas menores */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Sombra ajustada */
+    }
+}
