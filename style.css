@@ -21,7 +21,6 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
 }
 
 body {
@@ -145,12 +144,12 @@ p {
     max-width: 90%;
     padding: 6px; /* Aumentado para melhor usabilidade */
     font-size: 1rem; /* Tamanho maior para legibilidade */
-    font-family: "Dancing Script", cursive;
+    font-family: "DynaPuff", system-ui;
 }
 
 .caixa::placeholder {
     color: #888;
-    font-family: "Dancing Script", cursive;
+    font-family: "DynaPuff", system-ui;
     font-size: 1rem; /* Aumentado para legibilidade */
     opacity: 0.7;
 }
@@ -160,11 +159,11 @@ button {
     background-color: black;
     color: white;
     cursor: pointer;
-    padding: 6px 12px; /* Aumentado para melhor clique */
+    padding: 9px 12px; /* Aumentado para melhor clique */
     width: 100%;
     max-width: 90%;
     font-size: 1rem; /* Tamanho maior para legibilidade */
-    font-family: "Dancing Script", cursive;
+    font-family: "DynaPuff", system-ui;
 }
 
 @media (max-width: 768px) {
