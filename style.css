@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
 
 * {
     margin: 0;
@@ -11,6 +13,15 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+
+.dynapuff-uniquifier {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
 }
 
 body {
@@ -55,6 +66,7 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-family: "DynaPuff", system-ui;
     justify-content: center;
     border: solid 2.5px black;
     border-radius: 15px;
@@ -102,6 +114,7 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-family: "DynaPuff", system-ui;
     justify-content: center;
     border: solid 2.5px black;
     border-radius: 15px;
